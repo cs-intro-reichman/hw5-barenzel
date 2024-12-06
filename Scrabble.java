@@ -76,13 +76,14 @@ public class Scrabble {
 			int index = word.charAt(i) - 97;
 			countScore += SCRABBLE_LETTER_VALUES[index];
 		}
-		if (word.length() == 10 && MyString.subsetOf(word, createHand())) {
+		countScore *= word.length();
+		if (word.length() == 10) {
 			countScore += 50;
 		}
 		if (MyString.subsetOf("runi", word)) {
 			countScore += 1000;
 		}
-		return countScore * word.length();
+		return countScore;
 	}
 
 	// Creates a random hand of length (HAND_SIZE - 2) and then inserts
@@ -156,12 +157,13 @@ public class Scrabble {
 	}
 
 	public static void main(String[] args) {
+		System.out.println(wordScore("friendship"));
 		//playHand(createHand());
 		//// Uncomment the test you want to run
 		//testBuildingTheDictionary();  
 		//testScrabbleScore();    
 		//testCreateHand();  
-		testPlayHands();
+		//testPlayHands();
 	}
 
 	public static void testBuildingTheDictionary() {
