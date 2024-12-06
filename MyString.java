@@ -3,7 +3,7 @@
  */
 public class MyString {
     public static void main(String args[]) {
-        System.out.println(subsetOf("", "hi"));
+        System.out.println(subsetOf("r", "a y p i w e e q q g"));
         // String hello = "hello";
         // System.out.println(countChar(hello, 'h'));
         // System.out.println(countChar(hello, 'l'));
@@ -49,7 +49,7 @@ public class MyString {
          for (int i = 0; i < str1.length(); i++) {
             int countStr1 = countChar(str1, str1.charAt(i));
             int countStr2 = countChar(str2, str1.charAt(i));
-            if (countStr1 == countStr2) {
+            if (countStr1 <= countStr2) {
                 isSubset = true;
             } else {
                 return false;
