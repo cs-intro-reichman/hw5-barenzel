@@ -3,7 +3,7 @@
  */
 public class MyString {
     public static void main(String args[]) {
-        System.out.println(insertRandomly('b', "hi"));
+        System.out.println(subsetOf("", "hi"));
         // String hello = "hello";
         // System.out.println(countChar(hello, 'h'));
         // System.out.println(countChar(hello, 'l'));
@@ -42,6 +42,9 @@ public class MyString {
      * @return true is str1 is a subset of str2, false otherwise
      */
     public static boolean subsetOf(String str1, String str2) {
+        if (str1.equals("")) {
+            return true;
+        }
          boolean isSubset = false;
          for (int i = 0; i < str1.length(); i++) {
             int countStr1 = countChar(str1, str1.charAt(i));
