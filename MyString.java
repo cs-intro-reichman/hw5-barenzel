@@ -3,18 +3,18 @@
  */
 public class MyString {
     public static void main(String args[]) {
-        System.out.println(subsetOf("r", "a y p i w e e q q g"));
+        //System.out.println(subsetOf("r", "a y p i w e e q q g"));
         // String hello = "hello";
         // System.out.println(countChar(hello, 'h'));
         // System.out.println(countChar(hello, 'l'));
-        // System.out.println(countChar(hello, 'z'));
-        // System.out.println(spacedString(hello));
+         System.out.println(remove("abs", "ab"));
+        //System.out.println(spacedString("hello"));
         //// Put your other tests here.
     }
 
     /**
      * Returns the number of times the given character appears in the given string.
-     * Example: countChar("Center",'e') returns 2 and countChar("Center",'c') returns 0. 
+     * Example: countChar("Center",'e')sreturns 2 and countChar("Center",'c') returns 0. 
      * 
      * @param str - a string
      * @param c - a character

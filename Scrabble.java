@@ -77,7 +77,7 @@ public class Scrabble {
 			countScore += SCRABBLE_LETTER_VALUES[index];
 		}
 		countScore *= word.length();
-		if (word.length() == 10) {
+		if (word.length() == HAND_SIZE) {
 			countScore += 50;
 		}
 		if (MyString.subsetOf("runi", word)) {
